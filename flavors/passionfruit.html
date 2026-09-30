@@ -26,7 +26,7 @@
 <link rel="manifest" href="../site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" type="image/webp" href="../assets/video/passionfruit-pint-360-poster.webp">
+<link rel="preload" as="image" type="image/webp" href="../assets/img/spin-passionfruit-pint-poster.webp">
 <link rel="stylesheet" href="../assets/css/site.css">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
@@ -326,7 +326,7 @@
     <div class="phero-media">
       <div class="gallery" data-gallery>
         <div class="gallery-main">
-          <div class="v360 gallery-video" style="aspect-ratio:720 / 720" data-auto="yes"><picture><source type="image/webp" srcset="../assets/video/passionfruit-pint-360-poster.webp 720w" sizes="(min-width: 900px) 600px, 100vw"><img src="../assets/video/passionfruit-pint-360-poster.jpg" width="720" height="720" alt="Austropical Passionfruit sorbet pint, label to the front, on a magenta and gold backdrop; the 360 video turns the pack once." loading="eager" decoding="async" fetchpriority="high"></picture><video class="v360-video" muted playsinline preload="none" width="720" height="720" src="../assets/video/passionfruit-pint-360.mp4" loop aria-label="Austropical Passionfruit sorbet pint, label to the front, on a magenta and gold backdrop; the 360 video turns the pack once."></video><button class="v360-btn" type="button" aria-pressed="false"><span class="v360-ico" aria-hidden="true"></span><span class="v360-play">Play the 360</span><span class="v360-pause">Pause</span></button></div>
+          <div class="spin gallery-spin" data-spin="../assets/img/spin-passionfruit-pint.webp" data-frames="48" data-cols="8" data-rows="6" tabindex="0" role="slider" aria-label="Turn the Passionfruit pint" aria-valuemin="0" aria-valuemax="47" aria-valuenow="0" aria-valuetext="Front of the pack"><picture><source type="image/webp" srcset="../assets/img/spin-passionfruit-pint-poster.webp 500w" sizes="(min-width: 900px) 560px, 100vw"><img src="../assets/img/spin-passionfruit-pint-poster.jpg" width="500" height="500" alt="Austropical Passionfruit sorbet pint, label to the front, on a magenta and gold backdrop. Drag or use the arrow keys to turn it." loading="eager" decoding="async" fetchpriority="high"></picture><span class="spin-hint" aria-hidden="true"><span class="spin-hint-ico"></span>Drag to turn</span></div>
           <div class="gallery-image" hidden>
             <picture>
               <source type="image/webp" srcset="../assets/img/passionfruit-pint-bold-600.webp 600w, ../assets/img/passionfruit-pint-bold-680.webp 680w" sizes="(min-width: 900px) 560px, 100vw" data-src>
@@ -335,7 +335,7 @@
           </div>
         </div>
         <ul class="gallery-thumbs" aria-label="Views">
-          <li><button type="button" class="thumb is-active" data-video aria-pressed="true"><picture><source type="image/webp" srcset="../assets/video/passionfruit-pint-360-poster-200.webp 200w" sizes="96px"><img src="../assets/video/passionfruit-pint-360-poster.jpg" width="200" height="200" alt="360 video of the pint" loading="lazy" decoding="async"></picture><span>360</span></button></li>
+          <li><button type="button" class="thumb is-active" data-spin-thumb aria-pressed="true"><picture><source type="image/webp" srcset="../assets/img/spin-passionfruit-pint-poster-200.webp 200w" sizes="96px"><img src="../assets/img/spin-passionfruit-pint-poster.jpg" width="200" height="200" alt="360 view of the pint" loading="lazy" decoding="async"></picture><span>360</span></button></li>
           <li><button type="button" class="thumb" data-webp="../assets/img/passionfruit-pint-bold-600.webp 600w, ../assets/img/passionfruit-pint-bold-680.webp 680w" data-jpg="../assets/img/passionfruit-pint-bold-680.jpg" data-alt="Austropical Passionfruit sorbet pint, 500 mL (16.9 fl oz), front of pack, on a magenta and gold backdrop." aria-pressed="false"><picture><source type="image/webp" srcset="../assets/img/passionfruit-pint-bold-200.webp 200w" sizes="96px"><img src="../assets/img/passionfruit-pint-bold-680.jpg" width="200" height="200" alt="Pint" loading="lazy" decoding="async"></picture><span>Pint</span></button></li>
           <li><button type="button" class="thumb" data-webp="../assets/img/passionfruit-cup-bold-600.webp 600w, ../assets/img/passionfruit-cup-bold-610.webp 610w" data-jpg="../assets/img/passionfruit-cup-bold-610.jpg" data-alt="Austropical Passionfruit sorbet Grab&#39;n Go cup, 250 mL, front of pack, on a magenta and gold backdrop." aria-pressed="false"><picture><source type="image/webp" srcset="../assets/img/passionfruit-cup-bold-200.webp 200w" sizes="96px"><img src="../assets/img/passionfruit-cup-bold-610.jpg" width="200" height="200" alt="Grab’n Go cup" loading="lazy" decoding="async"></picture><span>Cup</span></button></li>
           <li><button type="button" class="thumb" data-webp="../assets/img/passionfruit-bucket-600.webp 600w, ../assets/img/passionfruit-bucket-1200.webp 1200w" data-jpg="../assets/img/passionfruit-bucket-1200.jpg" data-alt="Austropical Passionfruit sorbet 10.2 kg foodservice bucket: white square pail with the printed front label." aria-pressed="false"><picture><source type="image/webp" srcset="../assets/img/passionfruit-bucket-200.webp 200w" sizes="96px"><img src="../assets/img/passionfruit-bucket-1200.jpg" width="200" height="200" alt="Foodservice bucket" loading="lazy" decoding="async"></picture><span>Bucket</span></button></li>
@@ -345,7 +345,21 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section-fruit" id="fruit">
+  <div class="wrap split split-fruit">
+    <div class="fruit-photos fruit-photos-1">
+      <figure class="leaf fruit-first"><div class="leaf-img"><picture><source type="image/webp" srcset="../assets/img/photo-fruit-passionfruit-480.webp 480w, ../assets/img/photo-fruit-passionfruit-900.webp 900w" sizes="(min-width: 900px) 460px, 80vw"><img src="../assets/img/photo-fruit-passionfruit-900.jpg" width="900" height="900" alt="Yellow passionfruit, one cut in half to show the seeds and pulp" loading="lazy" decoding="async"></picture></div><figcaption class="photo-tag">Passionfruit</figcaption></figure>
+    </div>
+    <div>
+      <p class="eyebrow">What's in it</p>
+      <h2>30% passionfruit</h2>
+      <p class="lede-sm">Passionfruit is 30% of the recipe and the first ingredient on the label, followed by filtered water, cane sugar and agave syrup.</p>
+      <p><a href="#ingredients">The full ingredient statement</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
   <div class="wrap">
     <h2>Passion fruit sorbet with 30% passionfruit, made in the Brazilian Amazon</h2>
     <div class="detail-grid">
@@ -365,7 +379,7 @@
         </ul>
         <p class="small muted">Made in the Brazilian Amazon, in an FSSC 22000 certified facility. Pasteurized. Product of Brazil.</p>
       </div>
-      <div class="detail-card detail-wide">
+      <div class="detail-card detail-wide" id="ingredients">
         <h3>Ingredients</h3>
         <p class="ingredient-statement">Passionfruit (30%), Filtered Water, Cane Sugar, Agave Syrup, Stabilizers (Citrus Fiber, Guar Gum, Locust Bean Gum).</p>
         <p class="small muted">No allergen statement is printed or required for this product.</p>
@@ -397,7 +411,7 @@
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section">
   <div class="wrap split">
     <div>
       <p class="eyebrow">Grab'n Go</p>

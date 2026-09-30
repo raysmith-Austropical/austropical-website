@@ -26,7 +26,7 @@
 <link rel="manifest" href="../site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" type="image/webp" href="../assets/video/zero-sugar-pint-360-poster.webp">
+<link rel="preload" as="image" type="image/webp" href="../assets/img/spin-zero-sugar-pint-poster.webp">
 <link rel="stylesheet" href="../assets/css/site.css">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
@@ -346,7 +346,7 @@
     <div class="phero-media">
       <div class="gallery" data-gallery>
         <div class="gallery-main">
-          <div class="v360 gallery-video" style="aspect-ratio:720 / 720" data-auto="yes"><picture><source type="image/webp" srcset="../assets/video/zero-sugar-pint-360-poster.webp 720w" sizes="(min-width: 900px) 600px, 100vw"><img src="../assets/video/zero-sugar-pint-360-poster.jpg" width="720" height="720" alt="Austropical Açaí Zero Sugar sorbet pint, label to the front, on a blue backdrop; the 360 video turns the pack once. Not a low calorie food." loading="eager" decoding="async" fetchpriority="high"></picture><video class="v360-video" muted playsinline preload="none" width="720" height="720" src="../assets/video/zero-sugar-pint-360.mp4" loop aria-label="Austropical Açaí Zero Sugar sorbet pint, label to the front, on a blue backdrop; the 360 video turns the pack once. Not a low calorie food."></video><button class="v360-btn" type="button" aria-pressed="false"><span class="v360-ico" aria-hidden="true"></span><span class="v360-play">Play the 360</span><span class="v360-pause">Pause</span></button></div>
+          <div class="spin gallery-spin" data-spin="../assets/img/spin-zero-sugar-pint.webp" data-frames="48" data-cols="8" data-rows="6" tabindex="0" role="slider" aria-label="Turn the Açaí Zero Sugar pint" aria-valuemin="0" aria-valuemax="47" aria-valuenow="0" aria-valuetext="Front of the pack"><picture><source type="image/webp" srcset="../assets/img/spin-zero-sugar-pint-poster.webp 500w" sizes="(min-width: 900px) 560px, 100vw"><img src="../assets/img/spin-zero-sugar-pint-poster.jpg" width="500" height="500" alt="Austropical Açaí Zero Sugar sorbet pint, label to the front, on a blue backdrop. Drag or use the arrow keys to turn it. Not a low calorie food." loading="eager" decoding="async" fetchpriority="high"></picture><span class="spin-hint" aria-hidden="true"><span class="spin-hint-ico"></span>Drag to turn</span></div>
           <div class="gallery-image" hidden>
             <picture>
               <source type="image/webp" srcset="../assets/img/zero-sugar-pint-bold-600.webp 600w, ../assets/img/zero-sugar-pint-bold-680.webp 680w" sizes="(min-width: 900px) 560px, 100vw" data-src>
@@ -355,7 +355,7 @@
           </div>
         </div>
         <ul class="gallery-thumbs" aria-label="Views">
-          <li><button type="button" class="thumb is-active" data-video aria-pressed="true"><picture><source type="image/webp" srcset="../assets/video/zero-sugar-pint-360-poster-200.webp 200w" sizes="96px"><img src="../assets/video/zero-sugar-pint-360-poster.jpg" width="200" height="200" alt="360 video of the pint" loading="lazy" decoding="async"></picture><span>360</span></button></li>
+          <li><button type="button" class="thumb is-active" data-spin-thumb aria-pressed="true"><picture><source type="image/webp" srcset="../assets/img/spin-zero-sugar-pint-poster-200.webp 200w" sizes="96px"><img src="../assets/img/spin-zero-sugar-pint-poster.jpg" width="200" height="200" alt="360 view of the pint" loading="lazy" decoding="async"></picture><span>360</span></button></li>
           <li><button type="button" class="thumb" data-webp="../assets/img/zero-sugar-pint-bold-600.webp 600w, ../assets/img/zero-sugar-pint-bold-680.webp 680w" data-jpg="../assets/img/zero-sugar-pint-bold-680.jpg" data-alt="Austropical Açaí Zero Sugar sorbet pint, 500 mL (16.9 fl oz), front of pack, on a blue backdrop. Not a low calorie food." aria-pressed="false"><picture><source type="image/webp" srcset="../assets/img/zero-sugar-pint-bold-200.webp 200w" sizes="96px"><img src="../assets/img/zero-sugar-pint-bold-680.jpg" width="200" height="200" alt="Pint" loading="lazy" decoding="async"></picture><span>Pint</span></button></li>
           <li><button type="button" class="thumb" data-webp="../assets/img/zero-sugar-cup-bold-600.webp 600w, ../assets/img/zero-sugar-cup-bold-610.webp 610w" data-jpg="../assets/img/zero-sugar-cup-bold-610.jpg" data-alt="Austropical Açaí Zero Sugar sorbet Grab&#39;n Go cup, 250 mL, front of pack, on a blue backdrop. Not a low calorie food." aria-pressed="false"><picture><source type="image/webp" srcset="../assets/img/zero-sugar-cup-bold-200.webp 200w" sizes="96px"><img src="../assets/img/zero-sugar-cup-bold-610.jpg" width="200" height="200" alt="Grab’n Go cup" loading="lazy" decoding="async"></picture><span>Cup</span></button></li>
           <li><button type="button" class="thumb" data-webp="../assets/img/zero-sugar-bucket-600.webp 600w, ../assets/img/zero-sugar-bucket-1200.webp 1200w" data-jpg="../assets/img/zero-sugar-bucket-1200.jpg" data-alt="Austropical Açaí Zero Sugar sorbet 10.2 kg foodservice bucket: white square pail with the printed front label. Not a low calorie food." aria-pressed="false"><picture><source type="image/webp" srcset="../assets/img/zero-sugar-bucket-200.webp 200w" sizes="96px"><img src="../assets/img/zero-sugar-bucket-1200.jpg" width="200" height="200" alt="Foodservice bucket" loading="lazy" decoding="async"></picture><span>Bucket</span></button></li>
@@ -365,7 +365,21 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section section-fruit" id="fruit">
+  <div class="wrap split split-fruit">
+    <div class="fruit-photos fruit-photos-1">
+      <figure class="leaf fruit-first"><div class="leaf-img"><picture><source type="image/webp" srcset="../assets/img/photo-acai-berries-480.webp 480w, ../assets/img/photo-acai-berries-900.webp 900w" sizes="(min-width: 900px) 460px, 80vw"><img src="../assets/img/photo-acai-berries-900.jpg" width="900" height="900" alt="Açaí berries on their stems, on a palm frond" loading="lazy" decoding="async"></picture></div><figcaption class="photo-tag">Açaí</figcaption></figure>
+    </div>
+    <div>
+      <p class="eyebrow">What's in it</p>
+      <h2>60% açaí</h2>
+      <p class="lede-sm">Açaí is the small purple fruit of a palm that grows in the Amazon. It is 60% of this sorbet and the first ingredient on the label.</p>
+      <p><a href="#ingredients">The full ingredient statement</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
   <div class="wrap">
     <h2>Açaí sorbet with 60% açaí, sweetened with maltitol, erythritol and steviol glycoside. Not a low calorie food.</h2>
     <div class="detail-grid">
@@ -386,7 +400,7 @@
         </ul>
         <p class="small muted">Made in the Brazilian Amazon, in an FSSC 22000 certified facility. Pasteurized. Product of Brazil.</p>
       </div>
-      <div class="detail-card detail-wide">
+      <div class="detail-card detail-wide" id="ingredients">
         <h3>Ingredients</h3>
         <p class="ingredient-statement">Organic Açaí (60%), Filtered Water, Sweeteners (Maltitol, Polydextrose, Erythritol, Steviol Glycoside), Stabilizers (Locust Bean Gum, Guar Gum), Emulsifier (Mono and Diglycerides of Fatty Acids), Acidity Regulator (Citric Acid).</p>
         <p class="small">Excessive consumption may cause a laxative effect.</p>
@@ -418,7 +432,7 @@
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section">
   <div class="wrap split">
     <div>
       <p class="eyebrow">Grab'n Go</p>
