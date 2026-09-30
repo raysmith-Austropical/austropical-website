@@ -1,0 +1,21 @@
+{
+ "name": "Austropical",
+ "short_name": "Austropical",
+ "description": "Açaí and tropical fruit sorbets from Brazil.",
+ "start_url": "/",
+ "display": "browser",
+ "background_color": "#FBF1E4",
+ "theme_color": "#3A1C65",
+ "icons": [
+  {
+   "src": "/assets/img/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/img/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
