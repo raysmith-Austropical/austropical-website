@@ -26,7 +26,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" type="image/webp" href="assets/video/acai-range-16x9-poster-1280.webp" imagesrcset="assets/video/acai-range-16x9-poster-854.webp 854w, assets/video/acai-range-16x9-poster-1280.webp 1280w" imagesizes="(min-width: 900px) 600px, 100vw">
+<link rel="preload" as="image" type="image/webp" href="assets/img/photo-acai-bowl-800.webp" imagesrcset="assets/img/photo-acai-bowl-480.webp 480w, assets/img/photo-acai-bowl-800.webp 800w, assets/img/photo-acai-bowl-1200.webp 1200w" imagesizes="(min-width: 1232px) 520px, (min-width: 900px) 42vw, 84vw">
 <link rel="stylesheet" href="assets/css/site.css">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
@@ -123,7 +123,7 @@
   <div class="leafline" aria-hidden="true"></div>
 </header>
 <main id="main">
-<section class="hero on-dark">
+<section class="hero hero-v3 on-dark bg-leaves">
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <p class="pill-label">Coming to US freezers · March 2027</p>
@@ -135,15 +135,17 @@
       </div>
       <p class="small hero-note">Made in the Brazilian Amazon. Three flavors USDA certified organic. All ten certified vegan (Vegan Australia).</p>
     </div>
-    <div class="hero-media">
-      <div class="hero-stage">
-        <div class="v360 v360-hero" style="aspect-ratio:1280 / 720" data-auto="yes"><picture><source type="image/webp" srcset="assets/video/acai-range-16x9-poster-854.webp 854w, assets/video/acai-range-16x9-poster-1280.webp 1280w" sizes="(min-width: 900px) 600px, 100vw"><img src="assets/video/acai-range-16x9-poster-1280.jpg" width="1280" height="720" alt="Four Austropical açaí sorbet pints on a purple backdrop: Original Sensation, Strawberry Crush, Banana Sunrise and Zero Sugar (not a low calorie food). Text on the video: The açaí range, from every angle; Coming to US freezers, March 2027." loading="eager" decoding="async" fetchpriority="high"></picture><video class="v360-video" muted playsinline preload="none" width="1280" height="720" src="assets/video/acai-range-16x9.mp4" data-next="assets/video/fruit-range-16x9.mp4" aria-label="Four Austropical açaí sorbet pints on a purple backdrop: Original Sensation, Strawberry Crush, Banana Sunrise and Zero Sugar (not a low calorie food). Text on the video: The açaí range, from every angle; Coming to US freezers, March 2027."></video><button class="v360-btn" type="button" aria-pressed="false"><span class="v360-ico" aria-hidden="true"></span><span class="v360-play">Play the range video</span><span class="v360-pause">Pause</span></button></div>
-        <span class="sticker sticker-sun sticker-tl" aria-hidden="true">Made in<br>the<br>Amazon</span>
-        <span class="sticker sticker-pink sticker-tr" aria-hidden="true">Ten<br>flavors</span>
-      </div>
-      <p class="caption small">The açaí range, then the fruit sorbets, from every angle. Silent, 12 seconds each.</p>
+    <div class="hero-art">
+      <figure class="leaf leaf-hero">
+        <div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-acai-bowl-480.webp 480w, assets/img/photo-acai-bowl-800.webp 800w, assets/img/photo-acai-bowl-1200.webp 1200w" sizes="(min-width: 1232px) 520px, (min-width: 900px) 42vw, 84vw"><img src="assets/img/photo-acai-bowl-800.jpg" width="1200" height="1200" alt="An açaí bowl topped with sliced banana, strawberries, raspberries, blueberries and granola, on a yellow napkin" loading="eager" decoding="async" fetchpriority="high"></picture></div>
+        <figcaption class="photo-note">Serving suggestion.</figcaption>
+      </figure>
+      <a class="hero-pack" href="flavors/original-sensation.html"><picture><source type="image/webp" srcset="assets/img/original-sensation-pint-bold-600.webp 600w" sizes="(min-width: 900px) 230px, 40vw"><img src="assets/img/original-sensation-pint-bold-680.jpg" width="600" height="600" alt="Austropical Organic Açaí Original Sensation sorbet pint, 500 mL (16.9 fl oz), front of pack, on a purple backdrop." loading="eager" decoding="async"></picture><span class="hero-pack-label">Organic Açaí Original Sensation</span></a>
+      <span class="sticker sticker-sun sticker-tl" aria-hidden="true">Made in<br>the<br>Amazon</span>
+      <span class="sticker sticker-pink sticker-tr" aria-hidden="true">Ten<br>flavors</span>
     </div>
   </div>
+  <svg class="wave wave-cream" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 40 C 180 8 360 8 540 30 C 720 52 900 60 1080 38 C 1260 16 1350 18 1440 28 L1440 64 L0 64 Z"/></svg>
 </section>
 
 <section class="marquee" aria-label="Austropical in short">
@@ -180,85 +182,167 @@
   <button class="marquee-toggle" type="button" aria-pressed="false"><span class="visually-hidden">Pause the scrolling strip</span><span class="marquee-toggle-ico" aria-hidden="true"></span></button>
 </section>
 
-<section class="section" id="flavors">
+<section class="section section-flavors" id="flavors">
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">Ten flavors</p>
       <h2>Açaí sorbet and tropical fruit sorbet: ten flavors</h2>
       <p class="lede-sm">Açaí and tropical fruit sorbet made in Brazil, coming to US freezers in March 2027. Three flavors are USDA certified organic: Original Sensation, Mango and Coconut. All ten are certified vegan (Vegan Australia). Açaí Zero Sugar is not a low calorie food.</p>
     </div>
-    <ul class="grid-flavors">
-      <li class="card-flavor" style="--tint-a:#3C1C32;--tint-b:#260B31">
-        <a href="flavors/original-sensation.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/original-sensation-pint-bold-600.webp 600w, assets/img/original-sensation-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/original-sensation-pint-bold-680.jpg" width="680" height="680" alt="Austropical Organic Açaí Original Sensation sorbet pint, 500 mL (16.9 fl oz), front of pack, on a purple backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Organic Açaí Original Sensation</span>
-          <span class="card-line">Açaí sorbet, 60% açaí. USDA Organic.</span>
-        </a>
+<div class="flavor-filter-wrap">
+  <fieldset class="flavor-filter">
+    <legend class="visually-hidden">Show flavors</legend>
+    <span class="ff-label" aria-hidden="true">Show</span>
+    <input class="ff-radio" type="radio" name="ff" id="ff-all" value="all" checked><label for="ff-all">All ten</label>
+    <input class="ff-radio" type="radio" name="ff" id="ff-acai" value="acai"><label for="ff-acai">Açaí</label>
+    <input class="ff-radio" type="radio" name="ff" id="ff-fruit" value="fruit"><label for="ff-fruit">Tropical fruit</label>
+    <input class="ff-radio" type="radio" name="ff" id="ff-organic" value="organic"><label for="ff-organic">USDA Organic (3)</label>
+  </fieldset>
+  <p class="ff-count small" aria-live="polite"></p>
+  <ul class="grid-flavors grid-flavors-v3">
+    <li class="card-flavor" data-kind="acai" data-organic="yes" style="--tint-a:#3C1C32;--tint-b:#260B31">
+      <a href="flavors/original-sensation.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/original-sensation-pint-bold-600.webp 600w, assets/img/original-sensation-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/original-sensation-pint-bold-680.jpg" width="680" height="680" alt="Austropical Organic Açaí Original Sensation sorbet pint, 500 mL (16.9 fl oz), front of pack, on a purple backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Organic Açaí Original Sensation</span>
+        <span class="card-line">Açaí sorbet, 60% açaí. USDA Organic.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="acai" data-organic="no" style="--tint-a:#672C33;--tint-b:#360735">
+      <a href="flavors/banana-sunrise.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/banana-sunrise-pint-bold-600.webp 600w, assets/img/banana-sunrise-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/banana-sunrise-pint-bold-680.jpg" width="680" height="680" alt="Austropical Açaí Banana Sunrise sorbet pint, 500 mL (16.9 fl oz), front of pack, on a magenta backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Açaí Banana Sunrise</span>
+        <span class="card-line">Açaí sorbet with banana.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="acai" data-organic="no" style="--tint-a:#6D071D;--tint-b:#3D0015">
+      <a href="flavors/strawberry-crush.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/strawberry-crush-pint-bold-600.webp 600w, assets/img/strawberry-crush-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/strawberry-crush-pint-bold-680.jpg" width="680" height="680" alt="Austropical Açaí Strawberry Crush sorbet pint, 500 mL (16.9 fl oz), front of pack, on a crimson backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Açaí Strawberry Crush</span>
+        <span class="card-line">Açaí sorbet with strawberry.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="acai" data-organic="no" style="--tint-a:#4358A8;--tint-b:#314091">
+      <a href="flavors/zero-sugar.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/zero-sugar-pint-bold-600.webp 600w, assets/img/zero-sugar-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/zero-sugar-pint-bold-680.jpg" width="680" height="680" alt="Austropical Açaí Zero Sugar sorbet pint, 500 mL (16.9 fl oz), front of pack, on a blue backdrop. Not a low calorie food." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Açaí Zero Sugar</span>
+        <span class="card-line">Açaí sorbet. Not a low calorie food.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="fruit" data-organic="yes" style="--tint-a:#233310;--tint-b:#071F09">
+      <a href="flavors/coconut.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/coconut-pint-bold-600.webp 600w, assets/img/coconut-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/coconut-pint-bold-680.jpg" width="680" height="680" alt="Austropical Organic Coconut sorbet pint, 500 mL (16.9 fl oz), front of pack, on a green backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Organic Coconut</span>
+        <span class="card-line">Coconut sorbet, 45% coconut. USDA Organic.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="fruit" data-organic="yes" style="--tint-a:#8E3701;--tint-b:#571600">
+      <a href="flavors/mango.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/mango-pint-bold-600.webp 600w, assets/img/mango-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/mango-pint-bold-680.jpg" width="680" height="680" alt="Austropical Organic Mango sorbet pint, 500 mL (16.9 fl oz), front of pack, on an orange backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Organic Mango</span>
+        <span class="card-line">Mango sorbet, 60% mango. USDA Organic.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="fruit" data-organic="no" style="--tint-a:#471A23;--tint-b:#24011E">
+      <a href="flavors/passionfruit.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/passionfruit-pint-bold-600.webp 600w, assets/img/passionfruit-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/passionfruit-pint-bold-680.jpg" width="680" height="680" alt="Austropical Passionfruit sorbet pint, 500 mL (16.9 fl oz), front of pack, on a magenta and gold backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Passionfruit</span>
+        <span class="card-line">Passion fruit sorbet, 30% passionfruit.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="fruit" data-organic="no" style="--tint-a:#620E20;--tint-b:#41011A">
+      <a href="flavors/dragon-fruit-pineapple.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/dragon-fruit-pineapple-pint-bold-600.webp 600w, assets/img/dragon-fruit-pineapple-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/dragon-fruit-pineapple-pint-bold-680.jpg" width="680" height="680" alt="Austropical Dragon Fruit &amp; Pineapple sorbet pint, 500 mL (16.9 fl oz), front of pack, on a pink backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Dragon Fruit &amp; Pineapple</span>
+        <span class="card-line">50% dragon fruit, 20% pineapple.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="fruit" data-organic="no" style="--tint-a:#771A26;--tint-b:#5D0A1B">
+      <a href="flavors/pink-guava-acerola.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/pink-guava-acerola-pint-bold-600.webp 600w, assets/img/pink-guava-acerola-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/pink-guava-acerola-pint-bold-680.jpg" width="680" height="680" alt="Austropical Pink Guava &amp; Acerola sorbet pint, 500 mL (16.9 fl oz), front of pack, on a red-pink backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Pink Guava &amp; Acerola</span>
+        <span class="card-line">Rosy pink guava and acerola sorbet.</span>
+      </a>
+    </li>
+    <li class="card-flavor" data-kind="fruit" data-organic="no" style="--tint-a:#4F260A;--tint-b:#301103">
+      <a href="flavors/cupuacu-coconut.html">
+        <span class="card-media"><picture><source type="image/webp" srcset="assets/img/cupuacu-coconut-pint-bold-600.webp 600w, assets/img/cupuacu-coconut-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/cupuacu-coconut-pint-bold-680.jpg" width="680" height="680" alt="Austropical Cupuaçu &amp; Coconut sorbet pint, 500 mL (16.9 fl oz), front of pack, on a warm brown backdrop." loading="lazy" decoding="async"></picture></span>
+        <span class="card-name">Cupuaçu &amp; Coconut</span>
+        <span class="card-line">Cupuaçu sorbet with coconut.</span>
+      </a>
+    </li>
+  </ul>
+</div>
+  </div>
+</section>
+
+<section class="section section-story" id="amazon">
+  <div class="wrap split split-story">
+    <div class="story-collage">
+      <figure class="leaf leaf-wide story-main"><div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-amazon-river-960.webp 960w, assets/img/photo-amazon-river-1600.webp 1600w, assets/img/photo-amazon-river-2400.webp 2400w" sizes="(min-width: 900px) 560px, 92vw"><img src="assets/img/photo-amazon-river-1600.jpg" width="2400" height="1350" alt="The Amazon rainforest from the air, with a brown river winding through the trees" loading="lazy" decoding="async"></picture></div></figure>
+      <figure class="leaf leaf-flip story-a"><div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-acai-berries-480.webp 480w, assets/img/photo-acai-berries-900.webp 900w" sizes="(min-width: 900px) 250px, 44vw"><img src="assets/img/photo-acai-berries-900.jpg" width="900" height="900" alt="Açaí berries on their stems, on a palm frond" loading="lazy" decoding="async"></picture></div><figcaption class="photo-tag">Açaí</figcaption></figure>
+      <figure class="leaf story-b"><div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-acai-scoop-480.webp 480w, assets/img/photo-acai-scoop-900.webp 900w" sizes="(min-width: 900px) 230px, 40vw"><img src="assets/img/photo-acai-scoop-900.jpg" width="900" height="900" alt="A scoop of açaí in a white ramekin, with a strawberry and bowls of granola and toppings behind" loading="lazy" decoding="async"></picture></div><figcaption class="photo-tag">Serving suggestion</figcaption></figure>
+    </div>
+    <div>
+      <p class="eyebrow">From the Amazon</p>
+      <h2>Made in the Amazon. Sold in Australia since 2018. Coming to the US.</h2>
+      <p>Austropical sorbets are made in the Brazilian Amazon from Amazonian açaí and tropical fruit. Austropical Pty Ltd has sold them through foodservice in Australia since 2018. Austropical LLC, of Bayfield, Colorado, brings them to the United States.</p>
+      <ul class="check-list">
+        <li>The açaí recipes carry 40 to 60% açaí; fruit is first on every label.</li>
+        <li>Pasteurized, then frozen.</li>
+        <li>Three flavors USDA certified organic; all ten certified vegan (Vegan Australia).</li>
+      </ul>
+      <a class="btn btn-outline" href="about.html">About Austropical</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sun bg-leaves-ink" id="serve">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Serving suggestions</p>
+      <h2>Scoop, top and serve</h2>
+      <p class="lede-sm">A 2/3 cup scoop of sorbet is the base of the bowl. No blender: the toppings are yours.</p>
+    </div>
+    <ul class="photo-cards">
+      <li class="photo-card">
+        <figure class="leaf"><div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-acai-fruit-bowl-480.webp 480w, assets/img/photo-acai-fruit-bowl-900.webp 900w" sizes="(min-width: 900px) 360px, (min-width: 640px) 45vw, 88vw"><img src="assets/img/photo-acai-fruit-bowl-900.jpg" width="900" height="900" alt="An açaí bowl topped with banana, strawberries, blueberries, kiwi and coconut, seen from above" loading="lazy" decoding="async"></picture></div></figure>
+        <h3>Fruit on top</h3>
+        <p>Banana, strawberry, blueberries, kiwi and coconut over a scoop of açaí.</p>
+        <p class="photo-note-dark">Serving suggestion.</p>
       </li>
-      <li class="card-flavor" style="--tint-a:#672C33;--tint-b:#360735">
-        <a href="flavors/banana-sunrise.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/banana-sunrise-pint-bold-600.webp 600w, assets/img/banana-sunrise-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/banana-sunrise-pint-bold-680.jpg" width="680" height="680" alt="Austropical Açaí Banana Sunrise sorbet pint, 500 mL (16.9 fl oz), front of pack, on a magenta backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Açaí Banana Sunrise</span>
-          <span class="card-line">Açaí sorbet with banana.</span>
-        </a>
+      <li class="photo-card">
+        <figure class="leaf leaf-flip"><div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-acai-coconut-bowl-480.webp 480w, assets/img/photo-acai-coconut-bowl-800.webp 800w" sizes="(min-width: 900px) 360px, (min-width: 640px) 45vw, 88vw"><img src="assets/img/photo-acai-coconut-bowl-800.jpg" width="800" height="1000" alt="Açaí in a coconut shell bowl, topped with raspberries, red currants, blueberries and granola" loading="lazy" decoding="async"></picture></div></figure>
+        <h3>Berries and granola</h3>
+        <p>Raspberries, blueberries and a handful of granola, in a coconut shell bowl.</p>
+        <p class="photo-note-dark">Serving suggestion.</p>
       </li>
-      <li class="card-flavor" style="--tint-a:#6D071D;--tint-b:#3D0015">
-        <a href="flavors/strawberry-crush.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/strawberry-crush-pint-bold-600.webp 600w, assets/img/strawberry-crush-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/strawberry-crush-pint-bold-680.jpg" width="680" height="680" alt="Austropical Açaí Strawberry Crush sorbet pint, 500 mL (16.9 fl oz), front of pack, on a crimson backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Açaí Strawberry Crush</span>
-          <span class="card-line">Açaí sorbet with strawberry.</span>
-        </a>
-      </li>
-      <li class="card-flavor" style="--tint-a:#4358A8;--tint-b:#314091">
-        <a href="flavors/zero-sugar.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/zero-sugar-pint-bold-600.webp 600w, assets/img/zero-sugar-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/zero-sugar-pint-bold-680.jpg" width="680" height="680" alt="Austropical Açaí Zero Sugar sorbet pint, 500 mL (16.9 fl oz), front of pack, on a blue backdrop. Not a low calorie food." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Açaí Zero Sugar</span>
-          <span class="card-line">Açaí sorbet. Not a low calorie food.</span>
-        </a>
-      </li>
-      <li class="card-flavor" style="--tint-a:#233310;--tint-b:#071F09">
-        <a href="flavors/coconut.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/coconut-pint-bold-600.webp 600w, assets/img/coconut-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/coconut-pint-bold-680.jpg" width="680" height="680" alt="Austropical Organic Coconut sorbet pint, 500 mL (16.9 fl oz), front of pack, on a green backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Organic Coconut</span>
-          <span class="card-line">Coconut sorbet, 45% coconut. USDA Organic.</span>
-        </a>
-      </li>
-      <li class="card-flavor" style="--tint-a:#8E3701;--tint-b:#571600">
-        <a href="flavors/mango.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/mango-pint-bold-600.webp 600w, assets/img/mango-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/mango-pint-bold-680.jpg" width="680" height="680" alt="Austropical Organic Mango sorbet pint, 500 mL (16.9 fl oz), front of pack, on an orange backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Organic Mango</span>
-          <span class="card-line">Mango sorbet, 60% mango. USDA Organic.</span>
-        </a>
-      </li>
-      <li class="card-flavor" style="--tint-a:#471A23;--tint-b:#24011E">
-        <a href="flavors/passionfruit.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/passionfruit-pint-bold-600.webp 600w, assets/img/passionfruit-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/passionfruit-pint-bold-680.jpg" width="680" height="680" alt="Austropical Passionfruit sorbet pint, 500 mL (16.9 fl oz), front of pack, on a magenta and gold backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Passionfruit</span>
-          <span class="card-line">Passion fruit sorbet, 30% passionfruit.</span>
-        </a>
-      </li>
-      <li class="card-flavor" style="--tint-a:#620E20;--tint-b:#41011A">
-        <a href="flavors/dragon-fruit-pineapple.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/dragon-fruit-pineapple-pint-bold-600.webp 600w, assets/img/dragon-fruit-pineapple-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/dragon-fruit-pineapple-pint-bold-680.jpg" width="680" height="680" alt="Austropical Dragon Fruit &amp; Pineapple sorbet pint, 500 mL (16.9 fl oz), front of pack, on a pink backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Dragon Fruit &amp; Pineapple</span>
-          <span class="card-line">50% dragon fruit, 20% pineapple.</span>
-        </a>
-      </li>
-      <li class="card-flavor" style="--tint-a:#771A26;--tint-b:#5D0A1B">
-        <a href="flavors/pink-guava-acerola.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/pink-guava-acerola-pint-bold-600.webp 600w, assets/img/pink-guava-acerola-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/pink-guava-acerola-pint-bold-680.jpg" width="680" height="680" alt="Austropical Pink Guava &amp; Acerola sorbet pint, 500 mL (16.9 fl oz), front of pack, on a red-pink backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Pink Guava &amp; Acerola</span>
-          <span class="card-line">Rosy pink guava and acerola sorbet.</span>
-        </a>
-      </li>
-      <li class="card-flavor" style="--tint-a:#4F260A;--tint-b:#301103">
-        <a href="flavors/cupuacu-coconut.html">
-          <span class="card-media"><picture><source type="image/webp" srcset="assets/img/cupuacu-coconut-pint-bold-600.webp 600w, assets/img/cupuacu-coconut-pint-bold-680.webp 680w" sizes="(min-width: 1232px) 224px, (min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"><img src="assets/img/cupuacu-coconut-pint-bold-680.jpg" width="680" height="680" alt="Austropical Cupuaçu &amp; Coconut sorbet pint, 500 mL (16.9 fl oz), front of pack, on a warm brown backdrop." loading="lazy" decoding="async"></picture></span>
-          <span class="card-name">Cupuaçu &amp; Coconut</span>
-          <span class="card-line">Cupuaçu sorbet with coconut.</span>
-        </a>
+      <li class="photo-card">
+        <figure class="leaf"><div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-acai-topview-480.webp 480w, assets/img/photo-acai-topview-900.webp 900w" sizes="(min-width: 900px) 360px, (min-width: 640px) 45vw, 88vw"><img src="assets/img/photo-acai-topview-900.jpg" width="900" height="900" alt="Açaí in a white bowl seen from above, with small bowls of granola, nuts and chopped strawberries" loading="lazy" decoding="async"></picture></div></figure>
+        <h3>Toppings on the side</h3>
+        <p>Set out granola, nuts and chopped fruit and let everyone build their own bowl.</p>
+        <p class="photo-note-dark">Serving suggestion.</p>
       </li>
     </ul>
+    <div class="cta-row"><a class="btn" href="serving-ideas.html">More serving ideas</a></div>
+  </div>
+</section>
+
+<section class="section section-purple on-dark bg-leaves" id="foodservice">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow eyebrow-light">Foodservice</p>
+      <h2>The açaí bowl program for foodservice</h2>
+      <p class="lede-sm">No blender, no mix, no machine to calibrate: a scoop, a freezer, and a topping bar your customers set the value on.</p>
+      <ul class="stat-row">
+        <li><strong>2/3 cup</strong><span>147 g scoop</span></li>
+        <li><strong>About 69</strong><span>bowls a bucket</span></li>
+        <li><strong>Vistar</strong><span>items TLL65266 to TLL65275</span></li>
+      </ul>
+      <a class="btn btn-light" href="foodservice.html">The bowl program</a>
+    </div>
+    <div class="split-media">
+      <figure class="leaf leaf-flip leaf-ring-pink"><div class="leaf-img"><picture><source type="image/webp" srcset="assets/img/photo-campus-640.webp 640w, assets/img/photo-campus-1200.webp 1200w" sizes="(min-width: 900px) 560px, 92vw"><img src="assets/img/photo-campus-1200.jpg" width="1200" height="801" alt="Two students laughing over lunch on the steps outside a campus building" loading="lazy" decoding="async"></picture></div></figure>
+    </div>
   </div>
 </section>
 
@@ -288,53 +372,29 @@
   </div>
 </section>
 
-<section class="section section-purple on-dark" id="foodservice">
+<section class="section section-night on-dark" id="every-angle">
   <div class="wrap split">
     <div>
-      <p class="eyebrow eyebrow-light">Foodservice</p>
-      <h2>The açaí bowl program for foodservice</h2>
-      <p class="lede-sm">No blender, no mix, no machine to calibrate: a scoop, a freezer, and a topping bar your customers set the value on.</p>
-      <ul class="stat-row">
-        <li><strong>2/3 cup</strong><span>147 g scoop</span></li>
-        <li><strong>About 69</strong><span>bowls a bucket</span></li>
-        <li><strong>Vistar</strong><span>items TLL65266 to TLL65275</span></li>
-      </ul>
-      <a class="btn btn-light" href="foodservice.html">The bowl program</a>
+      <p class="eyebrow eyebrow-light">Every angle</p>
+      <h2>Ten flavors, turning once</h2>
+      <p class="lede-sm">The açaí range, then the fruit sorbets: the real packs, from every side. On every flavor page you can turn the pint yourself.</p>
+      <a class="btn btn-light" href="flavors/original-sensation.html">Turn a pint</a>
     </div>
     <div class="split-media">
-      <div class="v360 " style="aspect-ratio:1280 / 720" data-auto="yes"><picture><source type="image/webp" srcset="assets/video/acai-cup-range-16x9-poster-854.webp 854w, assets/video/acai-cup-range-16x9-poster-1280.webp 1280w" sizes="(min-width: 900px) 600px, 100vw"><img src="assets/video/acai-cup-range-16x9-poster-1280.jpg" width="1280" height="720" alt="Four Austropical açaí sorbet Grab&#39;n Go cups on a purple backdrop: Original Sensation, Strawberry Crush, Banana Sunrise and Zero Sugar (not a low calorie food). Text on the video: Açaí Grab&#39;n Go, from every angle; Coming to US freezers, March 2027." loading="lazy" decoding="async"></picture><video class="v360-video" muted playsinline preload="none" width="1280" height="720" src="assets/video/acai-cup-range-16x9.mp4" loop aria-label="Four Austropical açaí sorbet Grab&#39;n Go cups on a purple backdrop: Original Sensation, Strawberry Crush, Banana Sunrise and Zero Sugar (not a low calorie food). Text on the video: Açaí Grab&#39;n Go, from every angle; Coming to US freezers, March 2027."></video><button class="v360-btn" type="button" aria-pressed="false"><span class="v360-ico" aria-hidden="true"></span><span class="v360-play">Play the Grab’n Go video</span><span class="v360-pause">Pause</span></button></div>
+      <div class="v360 v360-hero" style="aspect-ratio:1280 / 720" data-auto="yes"><picture><source type="image/webp" srcset="assets/video/acai-range-16x9-poster-854.webp 854w, assets/video/acai-range-16x9-poster-1280.webp 1280w" sizes="(min-width: 900px) 600px, 100vw"><img src="assets/video/acai-range-16x9-poster-1280.jpg" width="1280" height="720" alt="Four Austropical açaí sorbet pints on a purple backdrop: Original Sensation, Strawberry Crush, Banana Sunrise and Zero Sugar (not a low calorie food). Text on the video: The açaí range, from every angle; Coming to US freezers, March 2027." loading="lazy" decoding="async"></picture><video class="v360-video" muted playsinline preload="none" width="1280" height="720" src="assets/video/acai-range-16x9.mp4" data-next="assets/video/fruit-range-16x9.mp4" aria-label="Four Austropical açaí sorbet pints on a purple backdrop: Original Sensation, Strawberry Crush, Banana Sunrise and Zero Sugar (not a low calorie food). Text on the video: The açaí range, from every angle; Coming to US freezers, March 2027."></video><button class="v360-btn" type="button" aria-pressed="false"><span class="v360-ico" aria-hidden="true"></span><span class="v360-play">Play the range video</span><span class="v360-pause">Pause</span></button></div>
+      <p class="caption small">Silent, 12 seconds each. Açaí Zero Sugar: Not a low calorie food.</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="about">
-  <div class="wrap split">
-    <div class="split-media order-first">
-      <picture><source type="image/webp" srcset="assets/img/range-palm-pop-960.webp 960w, assets/img/range-palm-pop-1920.webp 1920w" sizes="(min-width: 900px) 600px, 100vw"><img src="assets/img/range-palm-pop-1200.jpg" width="1920" height="1080" alt="All ten Austropical sorbet pints on a green terrazzo ledge, left to right: Coconut, Açaí Banana Sunrise, Dragon Fruit &amp; Pineapple, Açaí Strawberry Crush, Organic Açaí Original Sensation, Passionfruit, Açaí Zero Sugar, Pink Guava &amp; Acerola, Organic Mango, Cupuaçu &amp; Coconut. Text on the image: From the Amazon to US freezers; Coming to US freezers, March 2027; Zero Sugar is not a low calorie food." loading="lazy" decoding="async" class="rounded"></picture>
-    </div>
-    <div>
-      <p class="eyebrow">From the Amazon</p>
-      <h2>Made in the Amazon. Sold in Australia since 2018. Coming to the US.</h2>
-      <p>Austropical sorbets are made in the Brazilian Amazon from Amazonian açaí and tropical fruit. Austropical Pty Ltd has sold them through foodservice in Australia since 2018. Austropical LLC, of Bayfield, Colorado, brings them to the United States.</p>
-      <a class="btn btn-outline" href="about.html">About Austropical</a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-cream-deep" id="cta">
-  <div class="wrap cta-band">
-    <div>
-      <h2>Tell us your ZIP code</h2>
-      <p>Join the waitlist and we will tell you where Austropical is sold first.</p>
-      <a class="btn" href="where-to-buy.html">Join the waitlist</a>
-    </div>
-    <div>
-      <h2>Buyers and distributors</h2>
-      <p>Pints, Grab'n Go cups and 10.2 kg buckets. Set up at Vistar, live in GDSN for all 60 items.</p>
-      <a class="btn btn-outline" href="trade.html">Trade information</a>
-    </div>
-  </div>
-</section>
+<nav class="linkband bg-leaves" aria-label="Where next">
+  <ul class="wrap linkband-list">
+    <li><a href="where-to-buy.html"><span class="lb-big">Where to buy</span><span class="lb-small">Coming to US freezers · March 2027</span></a></li>
+    <li><a href="flavors/index.html"><span class="lb-big">Flavors</span><span class="lb-small">Ten sorbets, three formats</span></a></li>
+    <li><a href="foodservice.html"><span class="lb-big">Foodservice</span><span class="lb-small">The açaí bowl program</span></a></li>
+    <li><a href="trade.html"><span class="lb-big">Trade</span><span class="lb-small">Specs, GTINs and Vistar items</span></a></li>
+  </ul>
+</nav>
 </main>
 <footer class="site-footer on-dark">
   <div class="wrap">
