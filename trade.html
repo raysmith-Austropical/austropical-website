@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add("js")</script>
 <title>Austropical for buyers and distributors: formats and specs</title>
 <meta name="description" content="Austropical for buyers and distributors: pints, Grab&#39;n Go cups and 10.2 kg buckets, case packs, pallet, GTINs, GDSN via Syndigo, Vistar items and storage.">
 <meta name="keywords" content="acai sorbet distributor, acai sorbet wholesale, bulk acai sorbet, acai sorbet gdsn, vistar acai, austropical trade">
@@ -24,10 +25,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="assets/css/site.css">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.3677483f8a.css">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -156,13 +155,13 @@
   <div class="wrap">
     <p class="eyebrow">Formats</p>
     <h2>Three formats, ten flavors, 60 items</h2>
-    <div class="table-wrap">
-      <table class="data">
-        <thead><tr><th scope="col">Format</th><th scope="col">Net quantity</th><th scope="col">Net weight</th><th scope="col">Case</th><th scope="col">Unit dimensions</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Pint: paper tub, foil seal, paper lid</th><td>500 mL (16.9 fl oz)</td><td>425 g (420 g on Organic Coconut, Passionfruit, Pink Guava &amp; Acerola, Cupuaçu &amp; Coconut)</td><td>12 per case</td><td>3.82 × 3.82 × 4.49 in</td></tr>
-          <tr><th scope="row">Grab'n Go cup, wooden spoon included</th><td>250 mL</td><td>220 g</td><td>18 per case</td><td>3.82 × 3.82 × 2.36 in</td></tr>
-          <tr><th scope="row">Foodservice bucket: white square pail, snap lid, printed front label</th><td>10.2 kg</td><td>10.2 kg net (22.49 lb), 10.8 kg gross (23.53 lb)</td><td>Sold by the bucket; 120 per pallet (15 per layer × 8 layers), not cased</td><td>24.5 × 29.5 × 24.8 cm (9.65 × 11.61 × 9.76 in)</td></tr>
+    <div class="table-wrap" role="region" aria-label="Pack formats" tabindex="0">
+      <table class="data data-stack" role="table">
+        <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Format</th><th scope="col" role="columnheader">Net quantity</th><th scope="col" role="columnheader">Net weight</th><th scope="col" role="columnheader">Case</th><th scope="col" role="columnheader">Unit dimensions</th></tr></thead>
+        <tbody role="rowgroup">
+          <tr role="row"><th scope="row" role="rowheader">Pint: paper tub, foil seal, paper lid</th><td role="cell" data-label="Net quantity">500 mL (16.9 fl oz)</td><td role="cell" data-label="Net weight">425 g (420 g on Organic Coconut, Passionfruit, Pink Guava &amp; Acerola, Cupuaçu &amp; Coconut)</td><td role="cell" data-label="Case">12 per case</td><td role="cell" data-label="Unit dimensions">3.82 × 3.82 × 4.49 in</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Grab'n Go cup, wooden spoon included</th><td role="cell" data-label="Net quantity">250 mL</td><td role="cell" data-label="Net weight">220 g</td><td role="cell" data-label="Case">18 per case</td><td role="cell" data-label="Unit dimensions">3.82 × 3.82 × 2.36 in</td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Foodservice bucket: white square pail, snap lid, printed front label</th><td role="cell" data-label="Net quantity">10.2 kg</td><td role="cell" data-label="Net weight">10.2 kg net (22.49 lb), 10.8 kg gross (23.53 lb)</td><td role="cell" data-label="Case">Sold by the bucket; 120 per pallet (15 per layer × 8 layers), not cased</td><td role="cell" data-label="Unit dimensions">24.5 × 29.5 × 24.8 cm (9.65 × 11.61 × 9.76 in)</td></tr>
         </tbody>
       </table>
     </div>
@@ -198,7 +197,7 @@
     <p class="eyebrow">Identifiers</p>
     <h2>GTINs and Vistar item numbers</h2>
     <p class="lede-sm">GTIN-14 for each unit as published in GDSN. Consumer units carry the EAN-13 on the pack with a leading zero.</p>
-    <div class="table-wrap">
+    <div class="table-wrap" role="region" aria-label="Items and codes by flavor" tabindex="0">
       <table class="data data-tight">
         <thead><tr><th scope="col">Flavor</th><th scope="col">Pint</th><th scope="col">Pint case</th><th scope="col">Cup</th><th scope="col">Cup case</th><th scope="col">Bucket</th><th scope="col">Bucket pallet</th><th scope="col">Vistar item</th></tr></thead>
         <tbody>
@@ -301,6 +300,6 @@
     <p class="footer-legal small">Austropical LLC distributes Austropical sorbets in the United States. Made in the Brazilian Amazon. Austropical Pty Ltd, Australia.</p>
   </div>
 </footer>
-<script src="assets/js/site.js" defer></script>
+<script src="assets/js/site.9e7ad06cc5.js" defer></script>
 </body>
 </html>
