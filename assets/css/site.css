@@ -572,17 +572,59 @@ button { font: inherit; }
 .lb-small { font-size: .98rem; }
 @media (prefers-reduced-motion: reduce) { .lb-big::after { transition: none; } .linkband a:hover .lb-big::after { transform: none; } }
 
-/* ---------- 360 viewer (drag, swipe or arrow keys) ---------- */
-.spin { position: relative; aspect-ratio: 1 / 1; overflow: hidden; background-color: var(--night); background-repeat: no-repeat; cursor: grab; touch-action: pan-y; -webkit-user-select: none; user-select: none; }
-.spin picture, .spin img { width: 100%; height: 100%; }
-.spin img { object-fit: cover; -webkit-user-drag: none; pointer-events: none; }
-.spin.is-sprite picture { visibility: hidden; }
+/* ---------- 360 viewer: drag, swipe or arrow keys to turn; pinch, double-tap, ctrl + wheel or the buttons to zoom ---------- */
+.spin-wrap { position: relative; }
+.spin { position: relative; aspect-ratio: 1 / 1; overflow: hidden; background-color: var(--night); cursor: grab; touch-action: pan-y; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; }
+.spin-layer { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-repeat: no-repeat; }
+.spin-layer picture, .spin-layer img { width: 100%; height: 100%; max-width: none; }
+.spin-layer img { object-fit: cover; -webkit-user-drag: none; pointer-events: none; }
+.spin.is-sprite .spin-layer > picture { visibility: hidden; }
+.spin-hi { position: absolute; left: 0; top: 0; visibility: hidden; }
+.spin-hi.on { visibility: visible; }
 .spin.dragging { cursor: grabbing; }
+.spin-wrap.is-zoomed .spin { cursor: move; }
 .spin:focus-visible { outline: 3px solid var(--sun); outline-offset: 4px; }
 .spin-hint { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); display: inline-flex; align-items: center; gap: .55rem; background: rgba(31, 11, 61, .82); color: var(--cream); font-family: var(--font-display); font-weight: 700; font-size: .85rem; padding: .5rem 1rem; border-radius: 999px; pointer-events: none; white-space: nowrap; transition: opacity .35s ease; }
-.spin-hint-ico { position: relative; width: 26px; height: 10px; }
+.spin-hint-ico { position: relative; width: 26px; height: 10px; flex: none; }
 .spin-hint-ico::before, .spin-hint-ico::after { content: ""; position: absolute; top: 1px; width: 8px; height: 8px; border-top: 2px solid currentColor; border-left: 2px solid currentColor; }
 .spin-hint-ico::before { left: 1px; transform: rotate(-45deg); }
 .spin-hint-ico::after { right: 1px; transform: rotate(135deg); }
-.spin.touched .spin-hint { opacity: 0; }
+.hint-coarse { display: none; }
+@media (hover: none) and (pointer: coarse) { .hint-fine { display: none; } .hint-coarse { display: inline; } }
+.spin-wrap.touched .spin-hint, .spin-wrap.is-zoomed .spin-hint { opacity: 0; }
+.spin-btn { position: absolute; z-index: 2; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 2px solid rgba(251, 241, 228, .6); border-radius: 50%; background: rgba(31, 11, 61, .74); color: var(--cream); font-family: var(--font-display); font-weight: 700; font-size: 1.6rem; line-height: 1; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; transition: background-color .2s ease, opacity .2s ease; }
+.spin-btn:hover { background: rgba(31, 11, 61, .94); }
+.spin-btn:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 50%; }
+.spin-btn[aria-disabled="true"] { opacity: .38; cursor: default; }
+.spin-btn > span[aria-hidden] { display: block; margin-top: -2px; }
+.spin-zoom { position: absolute; z-index: 2; top: 14px; right: 14px; display: flex; flex-direction: column; gap: 8px; }
+.spin-zoom .spin-btn { position: static; }
+.spin-turn { top: 50%; margin-top: -22px; }
+.spin-prev { left: 14px; }
+.spin-next { right: 14px; }
+.chev { width: 12px; height: 12px; border-top: 3px solid currentColor; border-left: 3px solid currentColor; }
+.spin-prev .chev { transform: translateX(3px) rotate(-45deg); }
+.spin-next .chev { transform: translateX(-3px) rotate(135deg); }
+.spin-wrap:not(.is-ready) .spin-btn, .spin-wrap:not(.is-ready) .spin-hint { display: none; }
+@media (prefers-reduced-motion: reduce) { .spin-hint, .spin-btn { transition: none; } }
 .gallery-main .spin { width: 100%; }
+
+/* ---------- Studio: one big 360 viewer and a flavor picker (home and flavors pages) ---------- */
+.studio { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; margin-top: 1.75rem; }
+@media (min-width: 900px) { .studio { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 3.5rem; align-items: center; } }
+.studio .spin { border-radius: var(--radius-lg); border: 4px solid var(--cream); box-shadow: 12px 12px 0 rgba(0, 0, 0, .28); }
+.studio-cap { min-height: 7.2rem; }
+.studio-name { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.55rem, 3vw, 2.3rem); line-height: 1.05; letter-spacing: -.02em; margin: 0 0 .4rem; color: var(--cream); }
+.studio-line { margin: 0 0 .35rem; }
+.studio-zs { margin: 0 0 .35rem; font-weight: 700; color: var(--sun); }
+.studio-link { font-weight: 700; }
+.studio-link::after { content: "\00a0\2192"; }
+.picks { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+.pick { width: 100%; height: 100%; display: flex; align-items: center; gap: .65rem; padding: .35rem .7rem .35rem .35rem; background: rgba(0, 0, 0, .24); border: 2px solid transparent; border-radius: 16px; color: var(--cream); font-family: var(--font-display); font-weight: 700; font-size: .9rem; line-height: 1.15; text-align: left; cursor: pointer; transition: border-color .15s ease, background-color .15s ease; }
+.pick picture { flex: none; }
+.pick img { width: 46px; height: 46px; border-radius: 10px; object-fit: cover; }
+.pick:hover { border-color: rgba(251, 241, 228, .55); }
+.pick[aria-pressed="true"] { border-color: var(--sun); background: rgba(0, 0, 0, .4); }
+.pick:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 16px; }
+.studio-note { margin-top: .9rem; }
+@media (prefers-reduced-motion: reduce) { .pick { transition: none; } }
