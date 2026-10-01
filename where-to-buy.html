@@ -27,7 +27,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/site.8d3c244418.css">
+<link rel="stylesheet" href="assets/css/site.d4564896af.css">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -131,7 +131,7 @@
         <li><a href="foodservice.html">Foodservice</a></li>
         <li><a href="serving-ideas.html">Serving ideas</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="trade.html">Trade</a></li>
+        <li><a href="work-with-us.html">Work with us</a></li>
         <li class="nav-cta"><a class="btn btn-small btn-light" href="where-to-buy.html">Where to buy</a></li>
       </ul>
     </nav>
@@ -157,9 +157,18 @@
     <div>
       <p class="eyebrow">Waitlist</p>
       <h2>Tell us your ZIP code</h2>
-      <p>One email, one question. Send your ZIP code and we will tell you where Austropical is sold first. We use your email and ZIP for that and nothing else (<a href="privacy.html">privacy</a>).</p>
-      <a class="btn" href="mailto:info@austropical.co?subject=Waitlist&body=Please%20add%20me%20to%20the%20Austropical%20US%20waitlist.%0A%0AMy%20ZIP%20code%3A%20%0A%0AFlavors%20I%20want%20first%3A%20%0A%0A%28We%20use%20your%20email%20and%20ZIP%20only%20to%20tell%20you%20where%20Austropical%20is%20sold%20first.%29%0A">Join the waitlist by email</a>
-      <p class="small muted">The link opens a new email to info@austropical.co with the subject "Waitlist". Type your ZIP code in the body and send.</p>
+      <p>Send your ZIP code and we will tell you where Austropical is sold first. Add the flavors you want and a store you'd like to find it in, if you like.</p>
+      <form class="form form-card" data-aus-form="waitlist" data-to="info@austropical.co" data-subject="Waitlist" action="mailto:info@austropical.co" method="post" enctype="text/plain" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="wl-email">Email</label><input id="wl-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+          <div class="field"><label for="wl-zip">ZIP code</label><input id="wl-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" required placeholder="80216"></div>
+        </div>
+        <div class="field"><label for="wl-flavors">Flavors you want first <span class="hint">optional</span></label><input id="wl-flavors" name="flavors" type="text" placeholder="Original Sensation, Mango, Zero Sugar…"></div>
+        <div class="field"><label for="wl-store">A store you'd like to find it in <span class="hint">optional</span></label><input id="wl-store" name="store" type="text" placeholder="Store name and town"></div>
+        <label class="hp" aria-hidden="true">Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        <div class="form-actions"><button class="btn" type="submit">Join the waitlist</button><p class="form-status" role="status" aria-live="polite"></p></div>
+        <p class="small muted">We use your email and ZIP code to tell you where Austropical is sold first, and for nothing else (<a href="privacy.html">privacy</a>).</p>
+      </form>
     </div>
     <div class="split-media">
       <ul class="pair-row pair-row-v4" aria-label="The first two flavors">
@@ -196,8 +205,8 @@
   <div class="wrap cta-band">
     <div>
       <h2>Buyers and distributors</h2>
-      <p>Amazon açaí and tropical fruit sorbets from Brazil, in pints, Grab'n Go cups and 10.2 kg buckets, set up at Vistar and live in GDSN for all 60 items. US retail launches March 2027; nothing is on sale before then.</p>
-      <a class="btn" href="mailto:raysmith@austropical.co?subject=Spec%20sheets&body=Hi%20Ray%2C%0A%0APlease%20send%20the%20spec%20sheets.%0A%0ACompany%3A%0ARole%3A%0ADistributor%3A%0AFormats%20of%20interest%20%28pint%2C%20cup%2C%20bucket%29%3A%0A%0AThanks%2C%0A">Request the spec sheets</a>
+      <p>Amazon açaí and tropical fruit sorbets from Brazil, in pints, Grab'n Go cups and 10.2 kg buckets, set up at Vistar and Shamrock Foods and live in GDSN for all 60 items. US retail launches March 2027; nothing is on sale before then.</p>
+      <a class="btn" href="trade.html#request">Request the spec sheets</a>
       <a class="btn btn-outline" href="trade.html">Trade information</a>
     </div>
     <div>
@@ -248,11 +257,14 @@
           <li><a href="foodservice.html">Foodservice</a></li>
           <li><a href="serving-ideas.html">Serving ideas</a></li>
           <li><a href="where-to-buy.html">Where to buy</a></li>
+          <li><a href="work-with-us.html">Work with us</a></li>
           <li><a href="trade.html">Buyers and distributors</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="press.html">Press</a></li>
           <li><a href="blog/index.html">Blog</a></li>
           <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
           <li><a href="https://austropical.ai/" rel="noopener">Australia</a></li>
         </ul>
       </div>
@@ -268,6 +280,6 @@
     <p class="footer-legal small">Austropical LLC distributes Austropical sorbets in the United States. Made in the Brazilian Amazon. Austropical Pty Ltd, Australia.</p>
   </div>
 </footer>
-<script src="assets/js/site.9e7ad06cc5.js" defer></script>
+<script src="assets/js/site.6e9dde11fd.js" defer></script>
 </body>
 </html>
