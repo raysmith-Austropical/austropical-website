@@ -27,7 +27,7 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/site.2f114d4f3c.css">
+<link rel="stylesheet" href="assets/css/site.16b89f78d9.css">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -163,6 +163,7 @@
  ]
 }
 </script>
+<script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/assets/*"}},{"not":{"selector_matches":"[download], [target=_blank], [rel~=nofollow]"}}]},"eagerness":"moderate"}]}</script>
 </head>
 <body class="page-serving">
 <a class="skip" href="#main">Skip to content</a>
@@ -223,7 +224,7 @@
     <div class="section-head">
       <p class="eyebrow">Build a bowl</p>
       <h2 id="h-build">Pick a base. <span class="hl-ink">Pick the toppings.</span></h2>
-      <p class="lede-sm">Any of the ten flavors is the base. The four toppings are the same four as the foodservice bowl bar: tap one and the bowl changes.</p>
+      <p class="lede-sm">Any of the ten flavors is the base, and the four toppings are the foodservice bowl bar's four. Tap and the bowl changes; every bowl gets a name. Share it, save the picture, or let us surprise you.</p>
     </div>
     <div class="bb">
       <div class="bb-pic">
@@ -236,8 +237,14 @@
           <img class="bb-top is-on" data-top="coconut" src="assets/img/bowl/top-coconut-570.webp" srcset="assets/img/bowl/top-coconut-570.webp 570w, assets/img/bowl/top-coconut-1140.webp 1140w" sizes="(min-width: 960px) 604px, calc(100vw - 32px)" width="1140" height="1140" alt="" loading="lazy" decoding="async">
         </div>
       </div>
-      <p class="bb-caption" aria-live="polite"><span class="bb-kicker">Your bowl</span><strong class="bb-name">Organic Açaí Original Sensation</strong><span class="bb-tops">A 2/3 cup scoop, with granola, banana, strawberry and coconut.</span><a class="bb-link" href="flavors/original-sensation.html">About this flavor</a></p>
+      <div class="bb-caption">
+        <p class="bb-cap-text" aria-live="polite"><span class="bb-kicker">Your bowl</span><strong class="bb-title">The Amazon Works</strong><span class="bb-name">Organic Açaí Original Sensation</span><span class="bb-tops">A 2/3 cup scoop, with granola, banana, strawberry and coconut.</span></p>
+        <div class="bb-actions"><button type="button" class="btn bb-share" data-bb-share>Share my bowl</button><button type="button" class="btn btn-outline bb-save" data-bb-save>Save the picture</button></div>
+        <div class="bb-links"><button type="button" class="bb-linkbtn" data-bb-link>Copy the link</button><a class="bb-link" href="flavors/original-sensation.html">About this flavor</a></div>
+        <p class="bb-toast" role="status" hidden></p>
+      </div>
       <div class="bb-controls">
+        <div class="bb-dice"><span>Can't decide?</span><button type="button" class="btn btn-small" data-bb-surprise>Surprise me</button></div>
         <fieldset class="bb-group">
           <legend>The toppings</legend>
           <div class="bb-tops-grid">
@@ -365,6 +372,6 @@
     <p class="footer-legal small">Austropical LLC distributes Austropical sorbets in the United States. Made in the Brazilian Amazon. Austropical Pty Ltd, Australia.</p>
   </div>
 </footer>
-<script src="assets/js/site.237fb100cb.js" defer></script>
+<script src="assets/js/site.3b8139d681.js" defer></script>
 </body>
 </html>
