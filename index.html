@@ -102,6 +102,22 @@
 }
 </script>
 <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/assets/*"}},{"not":{"selector_matches":"[download], [target=_blank], [rel~=nofollow]"}}]},"eagerness":"moderate"}]}</script>
+<style>
+/* v18: Home, "More bowl ideas" under the bowl at home */
+.si-more { margin-top: clamp(2.75rem, 5vw, 4rem); border-top: 3px solid var(--sun); padding-top: 1.4rem; }
+.si-more-h { font-family: var(--font-display); font-weight: 800; font-size: clamp(1.4rem, 2.6vw, 1.9rem); line-height: 1.05; color: var(--cream); margin: 0 0 1.2rem; }
+.si-more-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+@media (min-width: 760px) { .si-more-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.6rem; } }
+.si-more-list li { margin: 0; }
+.si-more-list a { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 1rem; align-items: center; color: var(--cream); text-decoration: none; }
+@media (min-width: 760px) { .si-more-list a { grid-template-columns: minmax(0, 1fr); gap: .85rem; align-items: start; } }
+.si-more-list img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 18px; border: 3px solid var(--sun); background: #B6B9BB; transition: transform .2s ease; }
+.si-more-list a:hover img, .si-more-list a:focus-visible img { transform: translateY(-3px); }
+.si-more-list span { font-family: var(--font-display); font-weight: 700; font-size: 1.08rem; line-height: 1.2; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .18em; transition: text-decoration-color .2s ease; }
+.si-more-list a:hover span, .si-more-list a:focus-visible span { text-decoration-color: currentColor; }
+.si-more-list a:focus-visible { outline: 3px solid var(--sun); outline-offset: 4px; border-radius: 18px; }
+@media (prefers-reduced-motion: reduce) { .si-more-list img { transition: none; } .si-more-list a:hover img { transform: none; } }
+</style>
 </head>
 <body class="page-home">
 <a class="skip" href="#main">Skip to content</a>
@@ -390,6 +406,14 @@
         <button type="button" class="btn btn-small btn-light si-dice" data-si-surprise hidden>Surprise me</button>
         <figcaption class="small si-steps-cap" aria-live="polite">Serving suggestion. Build your own on the Serving ideas page.</figcaption>
       </figure>
+    </div>
+    <div class="si-more">
+      <h3 class="si-more-h">More bowl ideas</h3>
+      <ul class="si-more-list">
+        <li><a href="blog/acai-bowl-toppings.html"><img src="assets/img/bowl/post-mango-berry-crunch-570.webp" width="570" height="570" alt="" loading="lazy" decoding="async"><span>Açaí bowl toppings: what to put on top, and how</span></a></li>
+        <li><a href="blog/pitaya-bowl-without-a-blender.html"><img src="assets/img/bowl/post-dragon-berry-island-570.webp" width="570" height="570" alt="" loading="lazy" decoding="async"><span>How to make a pitaya bowl without a blender</span></a></li>
+        <li><a href="blog/acai-bowl-bar-party.html"><img src="assets/img/bowl/post-rosy-berry-island-570.webp" width="570" height="570" alt="" loading="lazy" decoding="async"><span>How to set up an açaí bowl bar for a party</span></a></li>
+      </ul>
     </div>
   </div>
 </section>
