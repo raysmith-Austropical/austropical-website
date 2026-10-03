@@ -30,7 +30,7 @@
 <link rel="preload" as="image" type="image/avif" href="../assets/img/field/cupuacu-coconut-wide-1440.avif" imagesrcset="../assets/img/field/cupuacu-coconut-wide-960.avif 960w, ../assets/img/field/cupuacu-coconut-wide-1440.avif 1440w, ../assets/img/field/cupuacu-coconut-wide-1920.avif 1920w, ../assets/img/field/cupuacu-coconut-wide-2400.avif 2400w" imagesizes="1032px" media="(min-width: 960px)" fetchpriority="high">
 <link rel="preload" as="image" type="image/avif" href="../assets/img/field/cupuacu-coconut-mid-1152.avif" imagesrcset="../assets/img/field/cupuacu-coconut-mid-768.avif 768w, ../assets/img/field/cupuacu-coconut-mid-1152.avif 1152w, ../assets/img/field/cupuacu-coconut-mid-1536.avif 1536w, ../assets/img/field/cupuacu-coconut-mid-1920.avif 1920w" imagesizes="100vw" media="(min-width: 640px) and (max-width: 959px)" fetchpriority="high">
 <link rel="preload" as="image" type="image/avif" href="../assets/img/field/cupuacu-coconut-tall-960.avif" imagesrcset="../assets/img/field/cupuacu-coconut-tall-480.avif 480w, ../assets/img/field/cupuacu-coconut-tall-640.avif 640w, ../assets/img/field/cupuacu-coconut-tall-960.avif 960w, ../assets/img/field/cupuacu-coconut-tall-1280.avif 1280w, ../assets/img/field/cupuacu-coconut-tall-1600.avif 1600w" imagesizes="100vw" media="(max-width: 639px)" fetchpriority="high">
-<link rel="stylesheet" href="../assets/css/site.1592b1282e.css">
+<link rel="stylesheet" href="../assets/css/site.8e3ec2c9c1.css">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -490,13 +490,20 @@
   <a class="pn-all" href="../flavors/index.html">All ten flavors</a>
   <a class="pn pn-next" href="../flavors/original-sensation.html" rel="next" style="--fbg:#D69B49;--ffg:#1F0B3D"><span class="pn-media"><picture><source type="image/avif" srcset="../assets/img/field/original-sensation-tall-480.avif 480w, ../assets/img/field/original-sensation-tall-640.avif 640w, ../assets/img/field/original-sensation-tall-960.avif 960w, ../assets/img/field/original-sensation-tall-1280.avif 1280w, ../assets/img/field/original-sensation-tall-1600.avif 1600w" sizes="84px"><source type="image/webp" srcset="../assets/img/field/original-sensation-tall-480.webp 480w, ../assets/img/field/original-sensation-tall-640.webp 640w, ../assets/img/field/original-sensation-tall-960.webp 960w, ../assets/img/field/original-sensation-tall-1280.webp 1280w, ../assets/img/field/original-sensation-tall-1600.webp 1600w" sizes="84px"><img src="../assets/img/field/original-sensation-tall-1600.jpg" width="1600" height="2160" alt="" loading="lazy" decoding="async"></picture></span><span class="pn-text"><span class="pn-label">Next</span><span class="pn-name">Organic Açaí Original Sensation</span></span></a>
 </nav>
+<div class="fl-dock" role="group" aria-label="Cupuaçu &amp; Coconut: get it first, or buy it wholesale"><img class="fl-dock-lid" src="../assets/img/lids/lid-cupuacu-coconut-80.webp" srcset="../assets/img/lids/lid-cupuacu-coconut-80.webp 1x, ../assets/img/lids/lid-cupuacu-coconut-160.webp 2x, ../assets/img/lids/lid-cupuacu-coconut-240.webp 3x" width="44" height="44" alt="" loading="lazy" decoding="async"><a class="btn btn-light" href="../where-to-buy.html#waitlist">Get it first</a><a class="btn btn-outline-light" href="../work-with-us.html#start">Wholesale</a></div>
 </main>
 <footer class="site-footer on-dark">
   <div class="wrap">
     <div class="footer-top">
       <a class="footer-logo" href="../index.html" aria-label="Austropical home"><img src="../assets/img/austropical-logo-white.svg" width="140" height="88" alt="Austropical" loading="lazy" decoding="async"></a>
       <p class="footer-shout">Coming to US freezers · March 2027</p>
-      <a class="btn btn-light" href="../where-to-buy.html">Join the waitlist</a>
+      <form class="form footer-join" data-aus-form="waitlist" data-subject="Waitlist (footer)" data-to="info@austropical.co" data-done-title="You are on the list." data-done="We will email you when Austropical reaches a freezer near you." action="mailto:info@austropical.co" method="post" enctype="text/plain" novalidate>
+        <p class="footer-join-h">Get it first: we will email you when it reaches a freezer near you.</p>
+        <div class="footer-join-row"><div class="field field-email"><label for="fj-email">Email</label><input id="fj-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div><div class="field"><label for="fj-zip">ZIP code</label><input id="fj-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" required placeholder="80216"></div><button class="btn btn-light" type="submit">Join the waitlist</button></div>
+        <label class="hp" aria-hidden="true">Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <p class="footer-join-note">Email and ZIP code only, used for nothing else (<a href="../privacy.html">privacy</a>). Buying for a store? <a href="../work-with-us.html#start">Wholesale inquiries</a></p>
+      </form>
     </div>
     <div class="footer-grid">
       <div class="footer-brand">
@@ -551,6 +558,6 @@
     <p class="footer-legal small">Austropical LLC distributes Austropical sorbets in the United States. Made in the Brazilian Amazon. Austropical Pty Ltd, Australia.</p>
   </div>
 </footer>
-<script src="../assets/js/site.354cf1ca55.js" defer></script>
+<script src="../assets/js/site.109f8f1bd5.js" defer></script>
 </body>
 </html>
