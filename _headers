@@ -3,7 +3,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   X-Frame-Options: DENY
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-qOhFsq0QMV2REqNwk5hGH5bZE9SkX6gt6yeyKdYPv+U='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self' https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://docs.google.com mailto:
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-qOhFsq0QMV2REqNwk5hGH5bZE9SkX6gt6yeyKdYPv+U=' 'sha256-LmLpjZq1X8x/Yn6nflVfVa+6cQTnYINqiNCi7uQRqr8=' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob:; media-src 'self'; connect-src 'self' blob: https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://docs.google.com mailto:
 /assets/*
   Cache-Control: public, max-age=604800
 /*.html
