@@ -28,7 +28,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" type="image/avif" imagesrcset="assets/cafe/cafe-store-mural-480.avif 480w, assets/cafe/cafe-store-mural-720.avif 720w, assets/cafe/cafe-store-mural-960.avif 960w, assets/cafe/cafe-store-mural-1280.avif 1280w, assets/cafe/cafe-store-mural-1600.avif 1600w, assets/cafe/cafe-store-mural-2400.avif 2400w" imagesizes="(min-width: 1232px) 410px, (min-width: 960px) 34vw, (min-width: 700px) 58vw, calc(100vw - 32px)" fetchpriority="high">
-<link rel="stylesheet" href="assets/css/site.1592b1282e.css">
+<link rel="stylesheet" href="assets/css/site.8e3ec2c9c1.css">
 <script type="speculationrules">{"prerender":[{"where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":"/assets/*"}},{"not":{"selector_matches":"[download], [target=_blank], [rel~=nofollow]"}}]},"eagerness":"moderate"}]}</script>
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://austropical.co/"}, {"@type": "ListItem", "position": 2, "name": "The Café", "item": "https://austropical.co/cafe"}]}, {"@context": "https://schema.org", "@type": "VideoObject", "name": "Caramel over açaí at the Austropical café in Sydney", "description": "Caramel sauce poured over a tall swirl of açaí in a clear cup.", "thumbnailUrl": "https://austropical.co/assets/cafe/cafe-step-top-poster.jpg", "contentUrl": "https://austropical.co/assets/cafe/cafe-step-top.mp4", "uploadDate": "2026-10-02", "duration": "PT8S", "width": 720, "height": 1280}, {"@context": "https://schema.org", "@type": "VideoObject", "name": "Building an Açaí Party Box at the Austropical café in Sydney", "description": "Kiwi laid in a row across a party box of açaí, beside rows of strawberry, banana and mango.", "thumbnailUrl": "https://austropical.co/assets/cafe/cafe-w-partybox-build-poster.jpg", "contentUrl": "https://austropical.co/assets/cafe/cafe-w-partybox-build.mp4", "uploadDate": "2026-10-02", "duration": "PT8S", "width": 576, "height": 1024}]</script>
 </head>
@@ -144,7 +144,13 @@
     <div class="footer-top">
       <a class="footer-logo" href="index.html" aria-label="Austropical home"><img src="assets/img/austropical-logo-white.svg" width="140" height="88" alt="Austropical" loading="lazy" decoding="async"></a>
       <p class="footer-shout">Coming to US freezers · March 2027</p>
-      <a class="btn btn-light" href="where-to-buy.html">Join the waitlist</a>
+      <form class="form footer-join" data-aus-form="waitlist" data-subject="Waitlist (footer)" data-to="info@austropical.co" data-done-title="You are on the list." data-done="We will email you when Austropical reaches a freezer near you." action="mailto:info@austropical.co" method="post" enctype="text/plain" novalidate>
+        <p class="footer-join-h">Get it first: we will email you when it reaches a freezer near you.</p>
+        <div class="footer-join-row"><div class="field field-email"><label for="fj-email">Email</label><input id="fj-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div><div class="field"><label for="fj-zip">ZIP code</label><input id="fj-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}(-[0-9]{4})?" required placeholder="80216"></div><button class="btn btn-light" type="submit">Join the waitlist</button></div>
+        <label class="hp" aria-hidden="true">Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <p class="footer-join-note">Email and ZIP code only, used for nothing else (<a href="privacy.html">privacy</a>). Buying for a store? <a href="work-with-us.html#start">Wholesale inquiries</a></p>
+      </form>
     </div>
     <div class="footer-grid">
       <div class="footer-brand">
@@ -199,6 +205,6 @@
     <p class="footer-legal small">Austropical LLC distributes Austropical sorbets in the United States. Made in the Brazilian Amazon. Austropical Pty Ltd, Australia.</p>
   </div>
 </footer>
-<script src="assets/js/site.354cf1ca55.js" defer></script>
+<script src="assets/js/site.109f8f1bd5.js" defer></script>
 </body>
 </html>
